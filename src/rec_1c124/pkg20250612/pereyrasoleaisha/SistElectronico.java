@@ -38,16 +38,16 @@ public class SistElectronico {
         switch(tipoViajero) {
             case 1:
                 pasajin = new PasajeComun(precio);
-                //recaudado += pasaje(precio);
+                recaudado += pasajin.pasaje(precio);
                   break;
             case 2:
                 pasajin = new PasajeEstudiante(precio);
-                //recaudado += pasaje(precio);
+                recaudado += pasajin.pasaje(precio);
                 break;
 
             case 3:
                 pasajin = new PasajeJubilado(precio);
-                //recaudado += pasaje(precio);
+                recaudado += pasajin.pasaje(precio);
                 break;
 
             default:
@@ -76,17 +76,17 @@ public class SistElectronico {
         switch(tipoTransporte) {
             case 1:
                 transportin = new Tren(patente,capacidad,empresa);
-                //recaudado -= calcularCostoBase(precio);
+                recaudado -= transportin.calcularCostoBase(precio);
                 
                   break;
             case 2:
                 transportin = new Colectivo(patente,capacidad,empresa);
-                //recaudado -= calcularCostoBase(precio);
+                recaudado -= transportin.calcularCostoBase(precio);
                 break;
 
             case 3:
                 transportin = new Subte(patente,capacidad,empresa);
-                //recaudado -= calcularCostoBase(precio);
+                recaudado -= transportin.calcularCostoBase(precio);
                 break;
 
             default:

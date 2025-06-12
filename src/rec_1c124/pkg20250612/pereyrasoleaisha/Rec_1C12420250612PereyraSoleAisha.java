@@ -48,7 +48,7 @@ public class Rec_1C12420250612PereyraSoleAisha {
                     break;
                 case 3:
                     
-                    System.out.println("Sin resolver :)");
+                    System.out.println("Recaudado: "+ sistema.recaudado);
                 case 4:
                     System.out.println("Sin resolver :)");
                 case 5:
